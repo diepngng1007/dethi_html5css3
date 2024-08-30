@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai thi</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Nước hoa nữ</a></li>
+                    <li><a href="#">Nước hoa nam</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <form action="">
+                <input type="text" required>
+                <button>Tìm kiếm</button>
+            </form>
+        </header>
+        <div class="logo" style="width:1280px; height:250px;">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <div class="banner">
+            <img src="./img/banner.jpg" alt="">
+        </div>
+        <article>
+            <div class="row">
+                <div class="col">
+                    <a href="#">
+                        <div class="text"><p style="color:#884583;">Viktor & Rolf Bon Bon</p></div>
+                        <div class="img"><img src="./img/product-img2.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;">445.000</p></div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="text"><p style="color:#884583;">Chanel Coco Mademoiselle</p></div>
+                        <div class="img"><img src="./img/product-img.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;"><s style="color:black;">2.5.00.00</s> 2.295.000</p></div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="text"><p style="color:#884583;">Viktor & Rolf Bon Bon</p></div>
+                        <div class="img"><img src="./img/product-img2.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;">445.000</p></div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="text"><p style="color:#884583;">La Nuit Tresor for women</p></div>
+                        <div class="img"><img src="./img/product-img3.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;">1.195.000</p></div>
+                    </a>
+                </div>
+                <!-- hang 2 -->
+                <div class="col">
+                   <a href="#">
+                        <div class="text"><p style="color:#884583;">Viktor & Rolf Bon Bon</p></div>
+                        <div class="img"><img src="./img/product-img2.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;">445.000</p></div>
+                   </a>
+                </div>
+                <div class="col">
+                   <a href="#">
+                        <div class="text"><p style="color:#884583;">Chanel Coco Mademoiselle</p></div>
+                        <div class="img"><img src="./img/product-img.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;">2.295.000</p></div>
+                   </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="text"><p style="color:#884583;">Viktor & Rolf Bon Bon</p></div>
+                        <div class="img"><img src="./img/product-img2.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;"><s style="color:black;">2.5.00.00</s> 2.295.000</p></div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="text"><p style="color:#884583;">La Nuit Tresor for women</p></div>
+                        <div class="img"><img src="./img/product-img3.jpg" alt=""></div>   
+                        <div class="price"><p style="color:#c12980;">1.195.000</p></div>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <p>Copyright @ 2015 Design by Ochna</p>
+        </footer>
+    </div>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
+        ctx.fillStyle = "#f4aaad";
+        ctx.ellipse(120,80,50,30,Math.PI*2,0,Math.PI*2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#b93c41";
+        ctx.ellipse(179,80,30,35,Math.PI*2,0,Math.PI*2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.font = "15px Duepuntozero";
+        ctx.fillText("my",130,80);
+
+        ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.font = "15px Duepuntozero";
+        ctx.fillText("perfume",150,80);
+
+        canvas.addEventListener('click',(e)=>{
+            console.log(e.clientX);
+            console.log(e.clientY);
+        })
+    </script>
+</body>
+</html>
